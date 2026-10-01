@@ -24,7 +24,7 @@ export const Hero = () => {
       </div>
       <div className="wrapper relative z-10  flex-1  w-full flex flex-col  justify-center   text-white">
         <div className="absolute top-[90%]">
-        <ScrollDownButton />
+        <ScrollDownButton  />
       </div>
         <div className="flex gap-5 sm:gap-0 flex-col">
           <div className="w-full">

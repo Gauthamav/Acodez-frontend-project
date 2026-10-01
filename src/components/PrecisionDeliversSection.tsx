@@ -4,6 +4,7 @@ import { precisionStatsData } from '../data/precisionStatsData';
 import PrecisionStatCard from './PrecisionStatCard';
 import Text from './Text';
 import AnimationButton from './AnimationButton';
+import { paragraphsInPrecisionDeliverSection } from '../data/textData';
 
 export default function PrecisionDeliversSection() {
   return (
@@ -37,7 +38,6 @@ export default function PrecisionDeliversSection() {
             </div>
           </div>
         </div>
-
         <div className="w-full h-full flex lg:justify-center">
           <div className=" flex text-[#221F1F] flex-col items-start  h-full">
             <div className="w-full flex lg:justify-start justify-center ">
@@ -45,16 +45,10 @@ export default function PrecisionDeliversSection() {
                 We're engineers, manufacturers and problem-solvers.
               </p>
             </div>
-
-            <div className="lg:max-w-[542px] mt-[38px] mb-[66px] flex flex-col gap-[10px] ">
-              <Text
-                textclass="lg:text-[16px] lg:text-left text-center opacity-80 text-[#221F1F] md:text-[14px] sm:text-sm text-xs"
-                paragraph="Whether you need a custom seal, a specialised extrusion, a bonded rubber component or a completely new product, we'll work with you to find the right solution."
-              />
-              <Text
-                textclass="lg:text-[16px] lg:text-left text-center opacity-80 text-[#221F1F] md:text-[14px] sm:text-sm text-xs"
-                paragraph="We've been doing it for more than two decades, helping businesses across Australia keep projects moving."
-              />
+            <div className="lg:max-w-[542px] mt-[38px] mb-[66px] flex flex-col gap-[12px] ">
+              {paragraphsInPrecisionDeliverSection.map(para => (
+                <Text key={para.id} textclass={para.textclass} paragraph={para.paragraph} />
+              ))}
             </div>
             <div className="flex w-full lg:justify-start justify-center">
               <AnimationButton

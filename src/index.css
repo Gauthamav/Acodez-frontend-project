@@ -38,3 +38,11 @@
   width: 94%;
   margin-inline: auto;
 }
+html {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}

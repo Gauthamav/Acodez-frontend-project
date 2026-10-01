@@ -8,6 +8,7 @@ import { useState } from 'react';
 export const Header = () => {
   const [navigationMenuActive, setNavigationMenuActive] = useState<boolean>(false);
   const [open, setOpen] = useState<boolean>(false);
+
   return (
     <header className=" w-full">
       <nav className="!mt-[35px] hidden w-full relative wrapper lg:flex items-center justify-between">
@@ -63,16 +64,16 @@ export const Header = () => {
             <Link className="font-nohemi uppercase font-medium text-[14px] text-[#FFFFFF]" to="/about">
               About
             </Link>
-            <div
+            <button
               onClick={() => setNavigationMenuActive(prev => !prev)}
-              className=" group font-nohemi flex items-center gap-1 uppercase font-medium text-[14px] text-[#FFFFFF]">
+              className=" group cursor-pointer font-nohemi flex items-center gap-1 uppercase font-medium text-[14px] text-[#FFFFFF]">
               Industries
               <img
                 className={` ${navigationMenuActive ? 'transition-transform duration-300 rotate-180' : 'transition-transform duration-300 '}`}
                 src="/images/downarrow.svg"
                 alt=""
               />
-            </div>
+            </button>
             {navigationMenuActive && (
               <div className="     w-fit ">
                 <div className="w-full flex justify-end  relative">
@@ -102,7 +103,10 @@ export const Header = () => {
         <div className="!mt-[35px] w-full wrapper  flex items-center justify-between">
           <img className="max-w-[200px] w-full h-[65px]  object-cover" src={LOGO_IMG}></img>
 
-          <label className="relative z-10  inline-block cursor-pointer select-none">
+          <label
+            className={`z-50  cursor-pointer inline-block cursor-pointer select-none ${
+              open ? 'fixed top-[55px] right-[3%]' : 'relative'
+            }`}>
             <input
               type="checkbox"
               checked={open}
