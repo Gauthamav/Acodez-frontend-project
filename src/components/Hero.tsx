@@ -6,7 +6,6 @@ import ScrollDownButton from './ScrollDownButton';
 export const Hero = () => {
   return (
     <section className="relative flex min-h-screen w-full flex-col overflow-hidden">
-      
       <video
         className="absolute inset-0 z-0 h-full w-full object-cover"
         src={HERO_SECTION_VIDEO_SRC}
@@ -24,8 +23,8 @@ export const Hero = () => {
       </div>
       <div className="wrapper relative z-10  flex-1  w-full flex flex-col  justify-center   text-white">
         <div className="absolute top-[90%]">
-        <ScrollDownButton  />
-      </div>
+          <ScrollDownButton />
+        </div>
         <div className="flex gap-5 sm:gap-0 flex-col">
           <div className="w-full">
             <div className="flex justify-center  sm:justify-start xl:justify-end xl:max-w-[50%] max-w-full w-full ">
@@ -54,7 +53,7 @@ export const Hero = () => {
           <div className="w-full flex 2xl:justify-center  justify-center lg:justify-start ">
             <div className="lg:max-w-[409px] px-5 max-w-fit lg:px-0 ">
               <Text
-                textclass="text-[#FFFFFF] lg:text-[16px] opacity-80   lg:text-[14px] sm:text-sm text-xs lg:text-left text-center"
+                textclass="text-[#FFFFFF]  opacity-80   lg:text-left text-center"
                 paragraph="For more than 20 years, we've helped Australian businesses solve problems with engineered rubber solutions. From design and tooling to manufacturing and delivery, we make what you need, when you need it."></Text>
             </div>
           </div>
@@ -63,7 +62,7 @@ export const Hero = () => {
               children="Discuss Your Project"
               bg="rgba(255, 255, 255, 0.3)"
               circleBg="#F05430"
-              buttonclass="h-[56px]  p-[4px] pl-[16px]  lg:text-[14px] text-xs md:text-sm gap-[14px] !font-normal leading-[16.8px]"
+              buttonclass="h-[56px] backdrop-blur-[6px]  p-[4px] pl-[16px]  lg:text-[14px] text-xs md:text-sm gap-[14px] !font-normal leading-[16.8px]"
               arrow="/icons/arrow-icon-white.svg"
             />
             <div className="flex flex-col items-start">
@@ -73,7 +72,7 @@ export const Hero = () => {
                 arrow="/icons/arrow-icon-white.svg"
                 imageclass="!h-[10px] !w-[25px]"
               />
-              <hr className=" h-0 w-[120px]  mt-[3px] border-0 border-t border-dashed border-white" />
+              <hr className="m-0 h-px w-[120px] mt-[3px] border-0 bg-[repeating-linear-gradient(to_right,#FFFFFF_0_1.5px,transparent_1.5px_2.5px)]" />
             </div>
           </div>
         </div>

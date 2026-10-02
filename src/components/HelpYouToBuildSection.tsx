@@ -13,7 +13,7 @@ export default function HelPYouToBuildSection() {
             paragraph={
               'We work with you to design, engineer and manufacture rubber solutions that meet your exact requirements.'
             }
-            textclass="lg:text-[16px] md:text-[14px] sm:text-sm text-xs text-[#221F1F] opacity-80 "
+            textclass="text-[#221F1F] opacity-80 "
           />
         </div>
 
