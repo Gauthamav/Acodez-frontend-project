@@ -6,6 +6,7 @@ import HelPYouToBuildSection from '../components/HelpYouToBuildSection';
 import WeCanShapeItSection from '../components/WeCanShapeItSection';
 import RubberCompany from '../components/RubberCompanySection';
 import SolutionSection from '../components/SolutionSection';
+import ConceptToDeliverySection from '../components/ConceptToDeliverySection';
 export default function HomePage() {
   return (
     <>
@@ -17,6 +18,7 @@ export default function HomePage() {
         <WeCanShapeItSection />
         <RubberCompany />
         <SolutionSection />
+        <ConceptToDeliverySection />
       </main>
       <Footer />
     </>
