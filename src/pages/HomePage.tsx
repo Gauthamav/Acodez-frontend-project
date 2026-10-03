@@ -7,6 +7,9 @@ import WeCanShapeItSection from '../components/WeCanShapeItSection';
 import RubberCompany from '../components/RubberCompanySection';
 import SolutionSection from '../components/SolutionSection';
 import ConceptToDeliverySection from '../components/ConceptToDeliverySection';
+import PrecisionIsNeeded from '../components/PrecisionIsNeeded';
+import FaqSection from '../components/FaqSection';
+import IndustryInsightSection from '../components/IndustryInsightSection';
 export default function HomePage() {
   return (
     <>
@@ -19,6 +22,10 @@ export default function HomePage() {
         <RubberCompany />
         <SolutionSection />
         <ConceptToDeliverySection />
+        <PrecisionIsNeeded />
+        <hr className="w-full mb-10 wrapper border-0 border-t border-dashed border-[#221F1F] opacity-20" />
+        <FaqSection />
+        <IndustryInsightSection />
       </main>
       <Footer />
     </>

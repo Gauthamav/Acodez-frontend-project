@@ -123,7 +123,7 @@ const StepItem = memo(function StepItem({ index, step, isActive, isLast, onSelec
   return (
     <li
       aria-current={isActive ? 'step' : undefined}
-      className={`flex w-full gap-3 sm:gap-6 lg:gap-9 ${isLast ? '' : 'md:flex-1'}`}>
+      className={`flex w-full  gap-3 sm:gap-6 lg:gap-9 ${isLast ? '' : 'md:flex-1'}`}>
       {/* Number + dotted connector */}
       <div className="flex flex-col items-center">
         <button
@@ -135,16 +135,14 @@ const StepItem = memo(function StepItem({ index, step, isActive, isLast, onSelec
           }`}>
           {String(index + 1).padStart(2, '0')}
         </button>
-        {/* No vertical margin: the line touches the circle above and the circle below */}
+
         {!isLast && <div className="w-0 flex-1 border-l-[1px] border-dashed border-[#221F1F]" />}
       </div>
-
-      {/* Text. On mobile the description only shows for the active step (smooth collapse). */}
       <div
         onClick={() => onSelect(index)}
         className={`min-w-0 flex-1 cursor-pointer pt-[7px] sm:pt-1 lg:pt-2 ${isLast ? '' : 'pb-10 md:pb-0'}`}>
         <h3
-          className={`text-base font-medium font-nohemi font- leading-snug tracking-tight transition-colors duration-500 sm:text-xl lg:text-[32px] lg:leading-tight ${
+          className={`text-base font-medium font-nohemi font- leading-snug tracking-tight transition-colors duration-500  text-[16px] md:text-[20px] lg:text-[24px] lg:leading-tight ${
             isActive ? 'text-[#F45330]' : 'text-[#221F1F]'
           }`}>
           {step.title}
@@ -155,7 +153,7 @@ const StepItem = memo(function StepItem({ index, step, isActive, isLast, onSelec
           }`}>
           <div className="min-h-0 overflow-hidden">
             <p
-              className={`mt-1 max-w-md text-sm transition-colors duration-500 sm:mt-2 sm:text-base lg:mt-3 lg:text-lg text-[#221F1F] opacity-80`}>
+              className={`mt-1 max-w-[334px] font-manrope font-medium text-sm transition-colors duration-500 sm:mt-2 sm:text-base lg:mt-3  text-[#221F1F] opacity-80`}>
               {step.description}
             </p>
           </div>
@@ -245,7 +243,7 @@ export default function StickyAnimation() {
         </div>
 
         {/* Scroll hint */}
-        <div className="absolute bottom-4 right-5 sm:right-8 md:bottom-0 md:right-[80px] md:mt-[66px]">
+        <div className="absolute bottom-0 right-0  md:mt-[66px]">
           <ScrollDownButton imageurl="/icons/downarrowicon-black.svg" border="#221F1F" />
         </div>
       </div>

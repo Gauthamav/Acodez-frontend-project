@@ -5,7 +5,7 @@ import Text from './Text';
 import MaskImage from '/images/HelpyouBuildImage.svg';
 export default function HelPYouToBuildSection() {
   return (
-    <section className="bg-white min-h-[75vh] lg:min-h-screen">
+    <section className="bg-white  xl:min-h-screen">
       <div className="flex wrapper w-full flex-col text-center items-center lg:py-[110px] py-[60px]">
         <SideHeading content="What Can We Help You " contentOrange="Build?" />
         <div className="mt-[20px] text-center lg:mb-[90px] mb-[50px]">
