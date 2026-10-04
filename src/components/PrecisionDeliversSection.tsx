@@ -39,7 +39,7 @@ export default function PrecisionDeliversSection() {
           </div>
         </div>
         <div className="w-full h-full flex lg:justify-center">
-          <div className=" flex text-[#221F1F] flex-col items-start  h-full">
+          <div className=" flex text-[#221F1F] flex-col items-start relative z-10 h-full">
             <div className="w-full flex lg:justify-start justify-center ">
               <p className="font-nohemi text-center lg:text-left lg:max-w-lg font-medium text-lg sm:text-xl md:text-2xl lg:text-[30px]">
                 We're engineers, manufacturers and problem-solvers.
@@ -55,7 +55,7 @@ export default function PrecisionDeliversSection() {
                 children="About VSRP"
                 bg="rgba(23, 24, 28, 0.1)"
                 circleBg="#F05430"
-                buttonclass="h-[56px] !text-[#221F1F]  p-[4px] pl-[16px]  lg:text-[14px] text-xs md:text-sm gap-[14px] !font-normal leading-[16.8px]"
+                buttonclass="lg:h-[56px] !text-[#221F1F]  p-[4px] pl-[16px]  lg:text-[14px] text-xs md:text-sm gap-[14px] !font-normal leading-[16.8px]"
                 arrow="/icons/arrow-icon-white.svg"
               />
             </div>

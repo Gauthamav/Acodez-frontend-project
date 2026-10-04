@@ -32,7 +32,7 @@ export default function AnimationButton({
         whileFocus="hover"
         style={{ backgroundColor: bg }}
         variants={{ hover: { backgroundColor: hoverBg } }}
-        className={`inline-flex justify-between  cursor-pointer items-center  rounded-full  font-nohemi font-semibold uppercase leading-none text-white ${buttonclass}`}
+        className={`inline-flex justify-between  gap-[20px] max-w-fit cursor-pointer items-center  rounded-full  font-nohemi font-semibold uppercase leading-none text-white ${buttonclass}`}
         {...props}>
         <span className="h-[1em] overflow-hidden">
           <motion.span
@@ -44,7 +44,7 @@ export default function AnimationButton({
         </span>
 
         <span
-          className={`relative h-[48px] w-[48px] overflow-hidden rounded-full ${imageclass}`}
+          className={`relative lg:h-[48px] lg:w-[48px] w-[35px] h-[35px] overflow-hidden rounded-full ${imageclass}`}
           style={{ backgroundColor: circleBg }}>
           <motion.img src={arrow} alt="" draggable={false} className={arrowClass} variants={{ hover: { x: 40 } }} />
           <motion.img

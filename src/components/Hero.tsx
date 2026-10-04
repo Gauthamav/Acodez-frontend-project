@@ -49,7 +49,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full lg:flex-row flex-col-reverse flex items-center gap-[30px] mt-[40px]">
+        <div className="w-full lg:flex-row flex-col-reverse flex items-center gap-[30px] mt-[60px] lg:mt-[40px]">
           <div className="w-full flex 2xl:justify-center  justify-center lg:justify-start ">
             <div className="lg:max-w-[409px] px-5 max-w-fit lg:px-0 ">
               <Text
@@ -62,13 +62,13 @@ export const Hero = () => {
               children="Discuss Your Project"
               bg="rgba(255, 255, 255, 0.3)"
               circleBg="#F05430"
-              buttonclass="h-[56px] backdrop-blur-[6px]  p-[4px] pl-[16px]  lg:text-[14px] text-xs md:text-sm gap-[14px] !font-normal leading-[16.8px]"
+              buttonclass="lg:h-[56px]  backdrop-blur-[6px]  p-[4px] pl-[16px] text-xs md:text-sm  lg:text-[14px] gap-[14px] !font-normal leading-[16.8px]"
               arrow="/icons/arrow-icon-white.svg"
             />
             <div className="flex flex-col items-start">
               <AnimationButton
                 children="See What We Do"
-                buttonclass="h-[56px] !w-fit !h-0  pb-[4px]  !gap-[1px] justify-start lg:text-[14px] !font-normal leading-[16.8px]   text-xs md:text-sm"
+                buttonclass="h-[56px]  !h-0  pb-[4px]  !gap-[1px] justify-start lg:text-[14px] !font-normal leading-[16.8px]   text-xs md:text-sm"
                 arrow="/icons/arrow-icon-white.svg"
                 imageclass="!h-[10px] !w-[25px]"
               />

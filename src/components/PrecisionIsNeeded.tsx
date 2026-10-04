@@ -17,7 +17,7 @@ export default function PrecisionIsNeeded() {
             children="View All  Projects"
             bg="rgba(23, 24, 28, 0.1)"
             circleBg="#F05430"
-            buttonclass="h-[56px] p-[4px] pl-[16px] backdrop-blur-[6px] lg:text-[14px] text-xs md:text-sm gap-[14px] !text-[#221F1F] !font-normal leading-[16.8px]"
+            buttonclass="lg:h-[56px] p-[4px] pl-[16px] backdrop-blur-[6px] lg:text-[14px] text-xs md:text-sm gap-[14px] !text-[#221F1F] !font-normal leading-[16.8px]"
             arrow="/icons/arrow-icon-white.svg"
           />
         </div>

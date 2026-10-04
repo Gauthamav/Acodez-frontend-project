@@ -10,6 +10,7 @@ import ConceptToDeliverySection from '../components/ConceptToDeliverySection';
 import PrecisionIsNeeded from '../components/PrecisionIsNeeded';
 import FaqSection from '../components/FaqSection';
 import IndustryInsightSection from '../components/IndustryInsightSection';
+import QualityInOurIndustrySection from '../components/QualityInOurIndustrySection';
 export default function HomePage() {
   return (
     <>
@@ -23,9 +24,10 @@ export default function HomePage() {
         <SolutionSection />
         <ConceptToDeliverySection />
         <PrecisionIsNeeded />
-        <hr className="w-full mb-10 wrapper border-0 border-t border-dashed border-[#221F1F] opacity-20" />
+        <hr className="w-full  wrapper border-0 border-t border-dashed border-[#221F1F] opacity-20" />
         <FaqSection />
         <IndustryInsightSection />
+        <QualityInOurIndustrySection />
       </main>
       <Footer />
     </>

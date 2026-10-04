@@ -32,7 +32,7 @@ export default function SolutionSection() {
               children="See Our Capabilities"
               bg="rgba(255, 255, 255, 0.3)"
               circleBg="#F05430"
-              buttonclass="h-[56px]  p-[4px] pl-[16px] backdrop-blur-[6px]  lg:text-[14px] text-xs md:text-sm gap-[14px] !font-normal leading-[16.8px]"
+              buttonclass="lg:h-[56px]  p-[4px] pl-[16px] backdrop-blur-[6px]  lg:text-[14px] text-xs md:text-sm gap-[14px] !font-normal leading-[16.8px]"
               arrow="/icons/arrow-icon-white.svg"
             />
           </div>

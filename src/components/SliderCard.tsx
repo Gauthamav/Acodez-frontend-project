@@ -16,13 +16,18 @@ export default function SliderCard({
 }: SliderCardProps) {
   return (
     <div className="flex flex-col lg:pr-[20px] gap-[30px]">
-      {/* width: 300px on mobile, 630px from sm up */}
-      <div className="relative h-[350px] lg:h-[511px] flex bg-[#221F1F] shrink-0 w-full lg:w-[630px]">
-        <div className="absolute lg:top-[40px] lg:right-[40px] top-[25px] right-[25px]">
+      <div className="relative h-[350px] lg:h-[511px] w-full lg:w-[630px] shrink-0 overflow-hidden bg-[#221F1F]">
+        <img
+          className="absolute inset-0 block w-full h-full !max-w-none object-cover object-center"
+          src={image}
+          alt={title ?? ''}
+        />
+        <div className="absolute inset-0 z-[1] bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
+        <div className="absolute z-10 lg:top-[40px] lg:right-[40px] top-[25px] right-[25px]">
           <div className="flex flex-col items-start">
             <AnimationButton
               children="View Project"
-              buttonclass="h-[56px] !w-fit !h-0 pb-[4px] !gap-[1px] justify-start !lg:text-[14px] !font-normal !text-xs !md:text-sm"
+              buttonclass="h-[56px]  !h-0 pb-[4px] !gap-[1px] justify-start !lg:text-[14px] !font-normal !text-xs !md:text-sm"
               arrow="/icons/arrow-icon-white.svg"
               imageclass="!h-[10px] !w-[25px]"
             />
@@ -38,8 +43,6 @@ export default function SliderCard({
             </span>
           ))}
         </div>
-
-        <img className="w-full h-full object-fill" src={image} alt="" />
       </div>
       <div className="flex flex-col gap-[15px]">
         <p className="font-nohemi text-[#221F1F] font-medium lg:text-[24px] md:text-[20px] sm:text-base text-sm">

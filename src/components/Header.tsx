@@ -12,14 +12,14 @@ export const Header = () => {
   return (
     <header className=" w-full">
       <nav className="!mt-[35px] hidden w-full relative wrapper lg:flex items-center justify-between">
-        <img className="max-w-[200px] w-full h-[65px]  object-cover" src={LOGO_IMG}></img>
+        <img className="max-w-fit w-full h-[65px]  object-cover" src={LOGO_IMG}></img>
         <ul className="flex items-center gap-[35px]">
-          <Link className="font-nohemi uppercase font-medium text-[14px] text-[#FFFFFF]" to="/about">
+          <Link className="font-nohemi uppercase font-medium text-[14px] text-[#FFFFFF] hover:text-[#F05430]" to="/about">
             About
           </Link>
           <div
             onMouseEnter={() => setNavigationMenuActive(true)}
-            className=" group font-nohemi flex items-center gap-1 uppercase font-medium text-[14px] text-[#FFFFFF]">
+            className=" group font-nohemi flex items-center gap-1 uppercase font-medium text-[14px] text-[#FFFFFF] hover:text-[#F05430]">
             Industries
             <img
               className={` ${navigationMenuActive ? 'transition-transform duration-300 rotate-180' : 'transition-transform duration-300 '}`}
@@ -40,7 +40,7 @@ export const Header = () => {
 
           {NAV_LINKS.map(navItem => (
             <Link
-              className="font-nohemi uppercase font-medium text-[14px] text-[#FFFFFF]"
+              className="font-nohemi uppercase font-medium text-[14px] text-[#FFFFFF] hover:text-[#F05430]"
               to={navItem.href}
               key={navItem.id}>
               {navItem.label}
@@ -51,7 +51,7 @@ export const Header = () => {
             bg="#F05430"
             hoverBg="#dc3d20"
             circleBg="#ffffff"
-            buttonclass="h-[56px] w-[158px] p-[4px] pl-[16px] text-[14px] "
+            buttonclass="lg:h-[56px]  p-[4px] pl-[16px] text-[14px] "
             arrow="/icons/arrow-icon-orange.svg"
           />
         </ul>
@@ -61,12 +61,12 @@ export const Header = () => {
         <div
           className={`fixed top-0 right-0 z-0 h-screen w-full sm:w-[350px] bg-black transform transition-transform duration-300 ease-in-out lg:hidden ${open ? 'translate-x-0' : 'translate-x-full'}`}>
           <ul className="flex mt-[70px] flex-col items-center gap-[50px]">
-            <Link className="font-nohemi uppercase font-medium text-[14px] text-[#FFFFFF]" to="/about">
+            <Link className="font-nohemi uppercase font-medium text-[14px] text-[#FFFFFF] hover:text-[#F05430]" to="/about">
               About
             </Link>
             <button
               onClick={() => setNavigationMenuActive(prev => !prev)}
-              className=" group cursor-pointer font-nohemi flex items-center gap-1 uppercase font-medium text-[14px] text-[#FFFFFF]">
+              className=" group cursor-pointer font-nohemi flex items-center gap-1 uppercase font-medium text-[14px] text-[#FFFFFF] hover:text-[#F05430]">
               Industries
               <img
                 className={` ${navigationMenuActive ? 'transition-transform duration-300 rotate-180' : 'transition-transform duration-300 '}`}
@@ -95,7 +95,7 @@ export const Header = () => {
               bg="#F05430"
               hoverBg="#dc3d20"
               circleBg="#ffffff"
-              buttonclass="h-[56px] w-[158px] p-[4px] pl-[16px] text-[14px] "
+              buttonclass="lg:h-[56px] p-[4px] pl-[16px] text-[14px] "
               arrow="/icons/arrow-icon-orange.svg"
             />
           </ul>
