@@ -1,9 +1,9 @@
 import AnimationButton from './AnimationButton';
 import AutoSlider from './AutoSlider';
 import SideHeading from './SideHeading';
-import SliderCard, { type SliderCardProps } from './SliderCard';
+import SliderCard  from './SliderCard';
 import { sliderCardData } from '../data/sliderCardData';
-// Add / remove items here, the slider adapts automatically.
+
 
 export default function PrecisionIsNeeded() {
   return (

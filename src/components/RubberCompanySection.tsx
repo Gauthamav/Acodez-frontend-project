@@ -1,4 +1,4 @@
-import type { data } from 'react-router-dom';
+
 import { rubberCompanyCardData } from '../data/rubberCompanyCardData';
 import RubberCompanyCard from './RubberCompanyCard';
 import SideHeading from './SideHeading';

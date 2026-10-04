@@ -4,7 +4,7 @@ type Type = {
   paragraph: string;
 };
 
-export const paragraphsInPrecisionDeliverSection = [
+export const paragraphsInPrecisionDeliverSection: Type[] = [
   {
     id: 1,
     textclass: ' lg:text-left text-center opacity-80 text-[#221F1F]',

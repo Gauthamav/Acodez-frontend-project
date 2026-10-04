@@ -1,4 +1,4 @@
-import icon from '/icons/rubber.svg';
+
 import Text from './Text';
 import { motion } from 'framer-motion';
 
