@@ -5,7 +5,7 @@ import AnimationButton from './AnimationButton';
 import ScrollDownButton from './ScrollDownButton';
 export const Hero = () => {
   return (
-    <section className="relative flex min-h-screen w-full flex-col overflow-hidden">
+    <section className="relative flex min-h-screen w-full flex-col ">
       <video
         className="absolute inset-0 z-0 h-full w-full object-cover"
         src={HERO_SECTION_VIDEO_SRC}
