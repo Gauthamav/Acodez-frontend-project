@@ -10,7 +10,7 @@ export const Header = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <header className=" w-full">
+    <header className="  w-full">
       <nav className="!mt-[35px] hidden w-full relative wrapper lg:flex items-center justify-between">
         <img className="max-w-fit w-full object-cover" alt="Company-logo-VRPS" src={LOGO_IMG}></img>
         <ul className="flex items-center gap-[35px]">
@@ -61,7 +61,7 @@ export const Header = () => {
 
       <nav className="lg:hidden   w-full">
         <div
-          className={`fixed top-0 right-0 z-0 h-screen w-full sm:w-[350px] bg-black transform transition-transform duration-300 ease-in-out lg:hidden ${open ? 'translate-x-0' : 'translate-x-full'}`}>
+          className={`fixed inset-0 top-0 right-0 z-50 h-screen w-full sm:w-[350px] bg-black transform transition-transform duration-300 ease-in-out lg:hidden ${open ? 'translate-x-0' : 'translate-x-full'}`}>
           <ul className="flex mt-[70px] flex-col items-center gap-[50px]">
             <Link
               className="font-nohemi uppercase font-medium text-[14px] text-[#FFFFFF] hover:text-[#F05430]"
