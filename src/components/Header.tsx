@@ -10,7 +10,7 @@ export const Header = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <header className="w-full">
+    <header className=" w-full">
       <nav className="!mt-[35px] hidden w-full relative wrapper lg:flex items-center justify-between">
         <img className="max-w-fit w-full object-cover" alt="Company-logo-VRPS" src={LOGO_IMG}></img>
         <ul className="flex items-center gap-[35px]">
@@ -59,9 +59,9 @@ export const Header = () => {
         </ul>
       </nav>
 
-      <nav className="lg:hidden w-full">
+      <nav className="lg:hidden   w-full">
         <div
-          className={`fixed inset-0  inset-y-0 z-[100] h-full w-full sm:w-[350px] bg-black transform transition-transform duration-300 ease-in-out lg:hidden ${open ? 'translate-x-0' : 'translate-x-full'}`}>
+          className={`fixed top-0 right-0 z-50 h-[100dvh] w-full sm:w-[350px] bg-black transform transition-transform duration-300 ease-in-out lg:hidden ${open ? 'translate-x-0' : 'translate-x-full'}`}>
           <ul className="flex mt-[70px] flex-col items-center gap-[50px]">
             <Link
               className="font-nohemi uppercase font-medium text-[14px] text-[#FFFFFF] hover:text-[#F05430]"
@@ -108,7 +108,7 @@ export const Header = () => {
           <img className="w-fit max-w-[170px] object-cover" alt="Company-logo-VRPS" src={LOGO_IMG}></img>
 
           <label
-            className={`z-[100]  cursor-pointer inline-block cursor-pointer select-none ${
+            className={`z-50  cursor-pointer inline-block cursor-pointer select-none ${
               open ? 'fixed top-[55px] right-[3%]' : 'relative'
             }`}>
             <input
