@@ -12,7 +12,7 @@ export default function FaqSection() {
   return (
     <section className="lg:py-[110px] relative py-[60px]">
       <div className="absolute bottom-0 left-0 ">
-        <img className="opacity-[50%]" src={backgroundRectangleImage}></img>
+        <img className="opacity-[50%]" alt='Faq-section-background-rectangles' src={backgroundRectangleImage}></img>
       </div>
       <div className="wrapper relative  z-10 flex lg:flex-row flex-col justify-between gap-[30px]">
         <div className="lg:max-w-[40%] flex flex-col md:text-left text-center md:items-start items-center gap-[20px] w-full">

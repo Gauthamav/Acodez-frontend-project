@@ -12,9 +12,11 @@ export const Header = () => {
   return (
     <header className=" w-full">
       <nav className="!mt-[35px] hidden w-full relative wrapper lg:flex items-center justify-between">
-        <img className="max-w-fit w-full h-[65px]  object-cover" src={LOGO_IMG}></img>
+        <img className="max-w-fit w-full object-cover" alt="Company-logo-VRPS" src={LOGO_IMG}></img>
         <ul className="flex items-center gap-[35px]">
-          <Link className="font-nohemi uppercase font-medium text-[14px] text-[#FFFFFF] hover:text-[#F05430]" to="/about">
+          <Link
+            className="font-nohemi uppercase font-medium text-[14px] text-[#FFFFFF] hover:text-[#F05430]"
+            to="/about">
             About
           </Link>
           <div
@@ -24,7 +26,7 @@ export const Header = () => {
             <img
               className={` ${navigationMenuActive ? 'transition-transform duration-300 rotate-180' : 'transition-transform duration-300 '}`}
               src="/images/downarrow.svg"
-              alt=""
+              alt="down-arrow-filled-icon"
             />
             {navigationMenuActive && (
               <div
@@ -61,7 +63,9 @@ export const Header = () => {
         <div
           className={`fixed top-0 right-0 z-0 h-screen w-full sm:w-[350px] bg-black transform transition-transform duration-300 ease-in-out lg:hidden ${open ? 'translate-x-0' : 'translate-x-full'}`}>
           <ul className="flex mt-[70px] flex-col items-center gap-[50px]">
-            <Link className="font-nohemi uppercase font-medium text-[14px] text-[#FFFFFF] hover:text-[#F05430]" to="/about">
+            <Link
+              className="font-nohemi uppercase font-medium text-[14px] text-[#FFFFFF] hover:text-[#F05430]"
+              to="/about">
               About
             </Link>
             <button
@@ -71,7 +75,7 @@ export const Header = () => {
               <img
                 className={` ${navigationMenuActive ? 'transition-transform duration-300 rotate-180' : 'transition-transform duration-300 '}`}
                 src="/images/downarrow.svg"
-                alt=""
+                alt="down-arrow-filled-icon"
               />
             </button>
             {navigationMenuActive && (
@@ -101,7 +105,7 @@ export const Header = () => {
           </ul>
         </div>
         <div className="!mt-[35px] w-full wrapper  flex items-center justify-between">
-          <img className="max-w-[200px] w-full h-[65px]  object-cover" src={LOGO_IMG}></img>
+          <img className="w-fit max-w-[170px] object-cover" alt="Company-logo-VRPS" src={LOGO_IMG}></img>
 
           <label
             className={`z-50  cursor-pointer inline-block cursor-pointer select-none ${

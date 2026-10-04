@@ -12,7 +12,7 @@ export default function RubberCompanyCard({ title, description, icon }: Props) {
   return (
     <div className="relative lg:max-w-[414px] xl:w-full xl:max-w-full max-w-full w-full flex flex-col sm:min-h-[300px] min-h-[200px] lg:min-h-[372px] bg-[#FFFFFF] p-[20px]  sm:p-[40px]">
       <div className=" sm:w-[70px] sm:h-[70px] w-[55px] h-[55px] left-0 top-0 bg-[#F45330] flex items-center rounded-full justify-center">
-        <img className="object-cover lg:w-auto lg:h-auto w-[30px] h-[30px]" src={icon}></img>
+        <img className="object-cover lg:w-auto lg:h-auto w-[30px] h-[30px]" alt={`${title} icon`} src={icon}></img>
       </div>
       <div className="flex-1 flex flex-col gap-[20px] justify-end">
         <div className="relative w-full">

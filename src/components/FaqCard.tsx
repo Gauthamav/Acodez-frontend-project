@@ -29,14 +29,14 @@ export default function FaqCard({ index, question, answer, open, setOpen }: Prop
           className="relative w-[32px] h-[32px] shrink-0 cursor-pointer rounded-full border-[1px] border-dashed border-[#F45330]">
           <img
             src={plusIcon}
-            alt=""
+            alt="accordion-open-icon-plus-sign"
             className={`absolute inset-0 m-auto w-[15px] h-[15px] transition-all duration-300 ease-out ${
               isOpen ? 'rotate-90 opacity-0' : 'rotate-0 opacity-100'
             }`}
           />
           <img
             src={minusIcon}
-            alt=""
+            alt="accordion-open-icon-minus-sign"
             className={`absolute inset-0 m-auto w-[15px] h-[15px] transition-all duration-300 ease-out ${isOpen ? 'rotate-0 opacity-100' : '-rotate-90 opacity-0'}`}
           />
         </button>

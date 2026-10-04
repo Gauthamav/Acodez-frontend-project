@@ -10,7 +10,7 @@ export default function PrecisionDeliversSection() {
   return (
     <section className=" flex relative bg-[#E0E8EC]">
       <div className="absolute bottom-0 right-0 ">
-        <img className="opacity-[50%]" src={backgroundRectangleImage}></img>
+        <img className="opacity-[50%]" alt='background-rectangle-image' src={backgroundRectangleImage}></img>
       </div>
       <div className="flex wrapper lg:py-[110px] py-[60px] lg:flex-row flex-col items-center gap-[40px]">
         <div className="w-full flex justify-center">

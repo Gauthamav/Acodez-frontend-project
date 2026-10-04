@@ -12,7 +12,7 @@ export default function NavigationMenuItem({ active, index, setActive, borderPos
     <div onMouseEnter={() => setActive(index)} className="flex cursor-pointer w-full flex-col gap-[30px]">
       {index === active ? <div className={`absolute w-[2px] h-[21px] bg-[#F45330]  ${borderPosition}`}></div> : ''}
       <div className="flex items-center gap-[19px]">
-        <img src={icon}></img>
+        <img alt={icon} src={icon}></img>
         <p className="font-nohemi font-medium text-[16px] ">{label}</p>
       </div>
       <hr
