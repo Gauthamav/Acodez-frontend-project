@@ -11,7 +11,13 @@ export const Hero = () => {
 
   return (
     <section className="relative flex min-h-screen w-full flex-col overflow-hidden">
-      <img src={HERO_SECTION_FALLBACK_IMAGE} alt="" className="absolute inset-0 z-0 h-full w-full object-cover" />
+      <img
+        src={HERO_SECTION_FALLBACK_IMAGE}
+        alt=""
+        fetchPriority="high"
+        decoding="async"
+        className="absolute inset-0 z-0 h-full w-full object-cover"
+      />
       <video
         className={`absolute inset-0 z-[1] h-full w-full object-cover transition-opacity duration-500 ${
           videoLoaded ? 'opacity-100' : 'opacity-0'
